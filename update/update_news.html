@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+<link rel="stylesheet" href="edit/assets/design/css/trumbowyg.css">
+<script type="text/javascript" src="edit/assets/jquery.min.js"></script>
+<script src="edit/assets/trumbowyg.js"></script>
+<script src="edit/assets/plugins/base64/trumbowyg.base64.js"></script>
+<style>
+    .pic_value{
+        padding-right: 0px;
+    }
+    .pic-open{
+        padding-left: 0px;
+    }
+    .editor img{
+        width: 60%;
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+    .attention {
+        font-size: 16px;
+        color: red;
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+</style>
+<body>
+<div class="attention">上传图片限制：最大宽度为987px<br>推荐尺寸: 宽度987px&nbsp;&nbsp;&nbsp;&nbsp;高度427px<br>大小不要超过1M</div>
+<div class="col-lg-12" style="margin-top: 40px">
+<form class="form-horizontal" role="form" action="update_news.php" method="post" onsubmit="return check(this)">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-1 control-label">标题</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstname" name="title" placeholder="请输入标题">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-1 control-label">简介</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="lastname" name="describe" placeholder="请输入简介">
+        </div>
+    </div>
+
+    <div class=" form-group"  >
+        <label for="lastname" class="col-sm-1 control-label">内容</label>
+        <div class="col-sm-10">
+            <input type="text" name="content" style="display: none"/>
+        <div  onmousedown="show_element(event)" style="clear:both" id="customized-buttonpane"  class="editor "></div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-left: 27%">
+        <div class="col-sm-offset-9 col-sm-10">
+            <button type="submit" class="btn btn-primary btn_open">确定</button>
+            <button type="reset" class="btn btn-default">取消</button>
+        </div>
+    </div>
+</form>
+
+</div>
+</body>
+
+
+<script>
+    $(function () {
+        $("#customized-buttonpane").blur(function () {
+            $("input[name='content']").val($(this).html())
+        })
+    })
+    function check(form) {
+        if (form.title.value == "") {
+            alert("请输入咨询标题！");
+            form.title.focus();
+            return false;
+        }
+        if (form.describe.value == "") {
+            alert("请输入咨询描述！");
+            form.title.focus();
+            return false;
+        }
+        if (form.content.value == "") {
+            alert("请输入咨询内容！");
+            form.title.focus();
+            return false;
+        }
+    }
+</script>
+</html>

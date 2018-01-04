@@ -1,0 +1,211 @@
+
+/*大优*/
+.yy{
+    width: 100%;
+    height: 157.5vw;
+    background: url('../pics/mobile_firstPage/yy/pic01.png');
+    background-size:100% 100%;
+    overflow: hidden;
+    position: relative;
+}
+.yy .yy_word01{
+    margin-top: 11.5625vw;
+    color: #00a0e9;
+    font-size: 6vw;
+    line-height: 8.125vw;
+    text-align: center;
+    margin-bottom: 1.875vw;
+    font-weight: 600;
+}
+.yy .yy_word02{
+    color: #00a0e9;
+    font-size: 6vw;
+    line-height: 8.125vw;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4.21875vw;
+}
+.yy .yy_word03{
+    color: #bababa;
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+}
+.yy .yy_word04{
+    color: #bababa;
+    text-align: center;
+    font-size: 2.8123vw;
+    line-height: 4.684vw;
+    margin-bottom: 3.125vw;
+}
+.yy .yy_word04 img{
+    width: 4.684%;
+    margin-left: 1.5625%;
+    vertical-align: middle;
+}
+.yy .yyPic{
+    display: block;
+    width: 81.5625%;
+    margin-left: 14.375%;
+}
+/*大优*/
+/*小优*/
+.xy{
+    width: 100%;
+    height: 157.5vw;
+    background: #e8e8e8;
+    overflow: hidden;
+}
+.xy .xy_word01{
+    margin-top: 12.5vw;
+    color: #00a0e9;
+    font-size: 6vw;
+    line-height: 8.125vw;
+    text-align: center;
+    margin-bottom: 1.875vw;
+    font-weight: 600;
+}
+.xy .xy_word02{
+    color: #00a0e9;
+    font-size: 6vw;
+    line-height: 8.125vw;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4.375vw;
+}
+.xy .xy_word03{
+    color: #808080;
+    text-align: center;
+    font-size: 4.6875vw;
+    line-height: 4.6875vw;
+    margin-bottom: 5vw;
+}
+.xy .xy_word04{
+    color: #808080;
+    text-align: center;
+    font-size: 2.8123vw;
+    line-height: 4.684vw;
+    margin-bottom: 5.625vw;
+}
+.xy .xy_word04 img{
+    width: 4.684%;
+    vertical-align: middle;
+    margin-left: 1.5625%;
+}
+.xy .xyPic{
+    display: block;
+    width: 85.625%;
+    float: right;
+}
+/*小优*/
+/*小笨*/
+.xb{
+    width: 100%;
+    height: 157.5vw;
+    background: #00a0e9;
+    overflow: hidden;
+    margin-bottom: 1.5625vw;
+}
+.xb .xb_word01{
+    margin-top: 12.5vw;
+    color: #fff;
+    font-size: 6vw;
+    line-height: 8.125vw;
+    text-align: center;
+    margin-bottom: 1.875vw;
+    font-weight: 600;
+}
+.xb .xb_word02{
+    color: #fff;
+    font-size: 6vw;
+    line-height: 8.125vw;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4.21875vw;
+}
+.xb .xb_word03{
+    color: #fff;
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+}
+.xb .xb_word04{
+    color: #fff;
+    text-align: center;
+    font-size: 2.65625vw;
+    line-height: 4.684vw;
+}
+.xb .xb_word04 img{
+    width: 4.684%;
+    vertical-align: middle;
+    margin-left: 1.5625%;
+}
+.xb .xbPic01{
+    margin-top: 7.8125vw;
+    width: 40%;
+    margin-right: 3%;
+}
+.xb .xbPic02{
+    margin-top: 1.875vw;
+    width: 52%;
+}
+/*小笨*/
+/*news*/
+.news{
+    width: 100%;
+    height: 53.125vw;
+    background: url('../pics/mobile_firstPage/news/pic01.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-bottom: 1.5625vw;
+}
+.news .news_word01{
+    color: #fff;
+    font-size: 6vw;
+    line-height: 8vw;
+    font-weight: 600;
+    margin-left: 67.5%;
+    margin-top: 21.09375vw;
+    margin-bottom: 2.1875vw;
+}
+.news .news_word02{
+    color: #fff;
+    margin-left: 69.59375%;
+    font-size: 2.8125vw;
+    line-height: 4.6875vw;
+}
+.news .news_word02 img{
+    width: 4.6875vw;
+    vertical-align: middle;
+}
+/*news*/
+/*aboutUs*/
+.aboutUs{
+    width: 100%;
+    height: 53.125vw;
+    background: url('../pics/mobile_firstPage/aboutUs/pic01.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-bottom: 1.5625vw;
+}
+.aboutUs .aboutUs_word01{
+    color: #fff;
+    font-size: 6vw;
+    line-height: 8vw;
+    font-weight: 600;
+    margin-top: 21.3125vw;
+    margin-left: 11.5625%;
+    margin-bottom: 3.1875vw;
+}
+.aboutUs .aboutUs_word02{
+    color: #fff;
+    margin-left: 11.5625%;
+    font-size: 2.8125vw;
+    line-height: 4.6875vw;
+}
+.aboutUs .aboutUs_word02 img{
+    width: 4.6875vw;
+    height: 4.6875vw;
+    vertical-align: middle;
+}
+/*aboutUs*/

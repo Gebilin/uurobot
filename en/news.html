@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UUROBOT</title>
+	<link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+  <link rel="shortcut" href="/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> 
+  <meta content="always" name="referrer">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <meta name="keywords" content="AI,robot,uurobot,Family partner,Adorable pet,Commercial,Customization,Smart IOT" />
+    <meta name="description" content="CANBOT is a leading intellectual service robotics creator ,manufacturer and commercial solutions provider,engaged in providing most creative robotic products and solutions for both family and industrial customers" />
+  <!-- 本地css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
+</head>
+<style>
+  .news-two-cont {
+    display: none;
+  }
+  #pager {
+    margin-top: 71px;
+  }
+  .pager-box:after{
+   display:block;
+   height:0;
+   visibility:hidden;
+   clear:both;
+   content:'';
+ }
+ .pager{
+   float:left;
+   position:relative;
+   left:50%;
+   font-family:微软雅黑;
+ }
+ .pager .next,.pager .prev {
+   width: 79px;
+ }
+ .pager a,.pager span{
+   position:relative;
+   left:-50%;
+   display:block;
+   float:left;
+   margin-left:10px;
+   border:1px solid #b6bcc1;
+   width: 42px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   text-decoration:none;
+   color:#b6bcc1;
+   border-radius:3px;
+ }
+ .pager span{
+   border:0;
+ }
+ .pager a.js-selected{
+   background:#00a0e9;
+   color:#fff;
+   cursor:default;
+ }
+ .pager a.js-disabled{
+   background:#d5d5d5;
+   border-color:#d5d5d5;
+   cursor:default;
+   color:#fff;
+ }
+</style>
+<body>
+  <div id="header">
+   <div class="nav clearfix">
+         <a href="index.html" class="logo"><img src="imgs/logo.png" alt="logo"></a>
+         <ul class="nav-list clearfix">
+           <li class="nav-item"><a href="xiaoyou.html">Family partner</a></li>
+           <li class="nav-item"><a href="xiaoben.html">Adorable pet</a></li>
+           <li class="nav-item"><a href="youyou.html">Commercial</a></li>
+           <li class="nav-item"><a href="custom.html">Customization</a></li>
+           <li class="nav-item"><a href="service.html">Service</a></li>
+           <li class="nav-item nav-item-right">
+           <form onsubmit="submitFn(this, event);">
+                <div class="search-wrapper">
+                  <div class="input-holder" id="form">
+                  <form action="#" class="filterform">
+                    <input type="text" class="search-input filterinput">
+                  </form>
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                  </div>
+                  <span class="close" onclick="searchToggle(this, event);"></span>
+                  <div class="result-container">
+                    <ul id="list"> 
+                      <li><a href="xiaoyou.html">U03S</a></li> 
+                      <li><a href="xiaoben.html">MINI U</a></li> 
+                      <li><a href="youyou.html">U05</a></li> 
+                      <li><a href="custom.html">Custom</a></li> 
+                      <li><a href="service.html">Customer Services</a></li> 
+                      <li><a href="aboutus.html">More</a></li>   
+                    </ul> 
+                  </div>
+                </div>
+              </form>
+             <div class="language">
+               <i class="earth-icon"></i>
+               <span><a href="http://www.uurobot.com">Chinese</a></span>
+             </div>
+           </li>
+         </ul>
+       </div>
+ <div class="nav-two" style="background:#fff;" id="scroll-nav">
+  <div class="nav-two-list">
+    <h4>NEWS</h4>
+    <ul>
+     <li><a href="javascript:;">Media reports</a></li>
+     <li><a href="javascript:;">Industry news</a></li>
+     <li><a href="javascript:;">Company dynamic</a></li>
+     <li style="width: 0"><a href="javascript:;"></a></li>
+   </ul>
+ </div>
+</div>
+</div>
+<div id="main" class="uu-detail news-section">
+  <div class="news-one"></div>
+  <div class="news-two">
+
+    <div id="pager"></div>
+    <div class="common-cont">
+      <div class="cooperation">
+        <h6 style="text-align: center;display: block;">Media partners</h6>
+        <div class="coo">
+          <img src="imgs/coor.jpg" alt="cooperation">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+     <div id="footer">
+        <div class="footer-con clearfix">
+          <ul class="footer-con-left">
+            <li>
+               <a href="javascript:;" class="list-tit">Products</a>
+               <a href="xiaoyou.html"><span>Family partner</span></a>
+               <a href="xiaoben.html"><span>Cute toy</span></a>
+               <a href="youyou.html"><span>Commercial</span></a>
+               <a href="custom.html"><span>Customization</span></a>
+            </li>
+            <li>
+               <a href="javascript:;" class="list-tit">Services</a>
+               <a href="service.html"><span>Policies</span></a>
+               <a href="service.html#tel-number"><span>Hotlines</span></a>
+               <a href="service.html#tel-number"><span>Download centre</span></a>
+            </li>
+            <li>
+               <a href="javascript:;" class="list-tit">About us</a>
+               <a href="aboutus.html"><span>Brand story</span></a>
+               <a href="aboutus.html#location"><span>Contacts</span></a>
+               <a href="aboutus.html#join"><span>join us</span></a>
+               <a href="news.html"><span>News</span></a>
+               <a href="aboutus.html#cooperation"><span>Partners</span></a>
+            </li>
+            <li class="li-last">
+               <a href="javascript:;" class="list-tit">Cooperation</a>
+               <a href="agent.html"><span>For agents</span></a>
+               <a href="agent.html"><span>For customization</span></a>
+               <a href="agent.html"><span>For leasing</span></a>
+               <a href="agent.html"><span>Miscellaneous</span></a>
+            </li>
+          </ul>
+          <div class="footer-con-right">
+            <p style="font-size: 14px;"><i class="phone-icon"></i><span class="number">&nbsp;400-108-1028</span>
+           Monday—Friday &nbsp;China time&nbsp;9:00-18:00</p>
+            <div class="line"></div>
+              <a href="https://weibo.com/unisrobo?ssl_rnd=1509768966.4765&is_hot=1"><i class="sina-icon"></i></a>
+              <i class="wechat-icon"></i><i class="wechat-erweima-icon"></i>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2017, UUROBOT. All rights reserved</div>
+     </div>   
+    <!-- footer -->
+
+<!-- Back To Top -->
+<a href="javascript:void(0);" class="back-to-top js__back-to-top"><i class="back-top-icon"></i></a>
+
+<!-- 插件 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/pager.js"></script>
+<script>
+  $(function () {
+        $('.new-pic span').css({'fontSize': '14px', 'color': '#999'})
+        $.ajax({
+            url: "json/industry.json",//json文件位置
+            type: "GET",//请求方式为get
+            cache: false,
+            success: function (data) {//请求成功完成后要执行的方法
+                var count = data.length;
+                var title, time, img_url, content, a_url;
+                for (var i=0;i<count;i++) {
+
+                    title = data[i]['title'];
+                    time = data[i]['time'];
+                    img_url = data[i]['img'];
+                    content = data[i]['describe'];
+                    a_url = data[i]['url'];
+                    var content_div = ['<div class="news-two-cont common-cont">',
+                        '                  <div class="ab-item">',
+                        '                    <a href="' + a_url + '/new.html"><h3 class="h2-bk">' + title + '</h3></a>',
+                        '                    <p><span class="time">' + time + '</span></p>',
+                        '             <div class="new-pic">',
+                        '             <div class="my-pic"></div>',
+                        '                    <div class="content" style="text-align:left">' + content + '</div>',
+                        '                    <div class="new-bottom">',
+                        '                      <i class="count"></i><span class="count-num">99+</span>',
+                        '                      <div class="more"><a href="' + a_url + '/new.html">More>></a></div>',
+                        '                    </div>',
+                        '                   </div>',
+                        '                </div>'].join("");
+                    $(".news-two").prepend(content_div);
+                    $('.news-two .my-pic:first').css({background:'url('+img_url+') no-repeat','backgroundPosition':'center'})
+                }
+
+                function doChangePage(obj) {
+                    var i = $('#pager .js-selected').index();
+                    var s = 0;
+                    for (s = 0; s < count; s++) {
+                        $('.news-two .news-two-cont').eq(s).css({'display': 'none'});
+                        for (var m = 5 * (i - 1); m < 5 * i; m++) {
+                            $('.news-two .news-two-cont').eq(m).css({'display': 'block'})
+                        }
+                    }
+                }
+
+                var pagerBox = document.getElementById('pager');
+                var allPages = Math.ceil(count / 5);
+                var pager = new Pager({
+                    index: 1,
+                    total: allPages,
+                    parent: pagerBox,
+                    onchange: doChangePage
+                });
+            }
+        })
+
+        // $.getJSON("json/industry.json",function(data){
+
+        // })
+
+    })
+</script>
+  </body>
+  </html>
+</body>
+</html>

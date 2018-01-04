@@ -1,0 +1,217 @@
+body{
+    background: #f5f3f3;
+}
+.page01{
+    width: 100%;
+    overflow: hidden;
+    height: 57.125vw;
+    background: url("../pics/moreNews/pic01.png");
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 6.875vw;
+    font-weight: 600;
+}
+.page01 p{
+    padding-top: 22.5vw;
+}
+.page02{
+    background: #fff;
+    width: 100%;
+    margin-bottom: 1.5625vw;
+}
+.page02 .page02_title{
+    padding-top: 10%;
+    margin-left: 5.3125vw;
+    margin-right: 5.3125vw;
+    font-size: 5.46875vw;
+    font-weight: 600;
+    color: #333;
+    line-height: 7.5vw;
+    padding-bottom: 1.5625vw;
+}
+.page02 .page02_word01{
+    margin-left: 5.3125vw;
+    margin-right: 5.3125vw;
+    color: #999;
+    font-size: 2.8125vw;
+    padding-bottom: 5.3125vw;
+}
+.page02 .page02_img{
+    width: 100%;
+    height: 53.125vw;
+    padding-bottom: 5.9375vw;
+}
+.page02 .page02_words{
+    width: 89.375vw;
+    margin: 0 auto;
+    color: #555;
+    font-size: 2.8125vw;
+    line-height: 3.90625vw;
+    text-align: justify;
+}
+.page02 .page02_word03{
+    color: #999;
+    padding-bottom: 5vw;
+    padding-left: 6vw;
+    line-height: 3.28125vw;
+    font-size: 2.1875vw;
+}
+.page02 .page02_img01{
+    height: 1.71875vw;
+    width: 3.28125vw;
+    vertical-align: middle;
+    margin-right: 1.09375vw;
+}
+.page02 .page02_img02{
+    height: 3.28125vw;
+    width: 2.8125vw;
+    vertical-align: middle;
+    margin-left: 3.125vw;
+}
+.page03{
+    width: 100%;
+    background: #fff;
+    padding-bottom: 3.75vw;
+}
+.page03 .page03_titles{
+    width: 89.375vw;
+    margin: 0 auto;
+}
+.page03 .page03_title{
+    color: #333;
+    font-size: 5.625vw;
+    font-weight: 600;
+    height: 13.28125vw;
+    line-height: 13.28125vw;
+}
+.page03 .page03_words{
+    width: 100%;
+    border-top: 1px solid #efefef;
+}
+.page03 .page03_word{
+    width: 89.375vw;
+    margin: 0 auto;
+    padding-top: 6.71875vw;
+    padding-bottom: 5vw;
+}
+.page03 .page03_img{
+    float: left;
+    width: 40.15625vw;
+    height: 26.875vw;
+    margin-right: 2.8125vw;
+}
+.page03 .page03_img img{
+    width: 100%;
+    height: 100%;
+}
+.page03 .page03_myWords{
+    float: left;
+    width: 45vw;
+    padding-top: 3.28125vw;
+    position: relative;
+    height: 22.8125vw;
+}
+.page03 .page03_word01{
+    color: #333;
+    font-size: 2.8125vw;
+    line-height: 4.6875vw;
+}
+.page03 .page03_word02{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #999;
+    font-size: 2.1875vw;
+    line-height: 2.5vw;
+    width: 100%;
+}
+.page03 .page03_word02 a{
+    color: #00a0e9;
+    font-size: 2.5vw;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.page03 .page03_word02 img{
+    width: 3.28125vw;
+    height: 1.71875vw;
+    vertical-align: middle;
+    margin-left: .9375vw;
+    margin-right: .9375vw;
+}
+.share{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.shareMark{
+    background: rgba(0,0,0,.7);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.shareIcons{
+    position: absolute;
+    bottom: 0vw;
+    z-index: 10;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #e7e7e7;
+    padding-bottom: 5vw;
+    font-size: 3vw;
+}
+#qrcode{
+    background: url("../pics/moreNews/wechat.png");
+    width: 12vw;
+    margin: 0 auto 2vw;
+    height: 12vw;
+    background-size: 100% 100%;
+    float: none;
+}
+#jmn-share{
+    position: absolute;
+    top: -50vh;
+}
+#qq{
+    background: url("../pics/moreNews/qq.png");
+    width: 12vw;
+    margin: 0 auto 2vw;
+    height: 12vw;
+    background-size: 100% 100%;
+    float: none;
+}
+#qzone{
+    background: url("../pics/moreNews/zone.png");
+    width: 12vw;
+    margin: 0 auto 2vw;
+    height: 12vw;
+    background-size: 100% 100%;
+    float: none;
+}
+#sina{
+    background: url("../pics/moreNews/sina.png");
+    width: 12vw;
+    margin: 0 auto 2vw;
+    height: 12vw;
+    background-size: 100% 100%;
+    float: none;
+}
+.shareIcon{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 6.125vw;
+    float: none;
+}
+.shareContents{
+    width: 25%;
+    float: left;
+    text-align: center;
+}

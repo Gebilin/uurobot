@@ -1,0 +1,407 @@
+.page01{
+    width: 100%;
+    height: 157.5vw;
+    background: url("../pics/xiaoben/page1/pic01.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+    position: relative;
+}
+.page01 .myVideo{
+    width: 100%;
+    height: 157.5vw;
+    background: #fff;
+    position: absolute;
+    top:0;
+    display: none;
+}
+.closeVideoBtn{
+    position: absolute;
+    right: 5vw;
+    width: 6vw;
+    top:5vw;
+}
+.page01 .page01_video{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50.7vw;
+}
+.page01 .page01_content{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.page01 .page01_word01{
+    font-size: 7.1875vw;
+    font-weight: 600;
+    padding-top: 16.875vw;
+    margin-bottom: 0.625vw;
+}
+.page01 .page01_word02{
+    font-size: 6.5vw;
+    font-weight: 600;
+    margin-bottom: 5.625vw;
+}
+.page01 .page01_word03{
+    font-size:2.38095vw;
+    line-height: 4.6875vw;
+    margin-bottom: 7.5vw;
+}
+.page01 .page01_word03 img{
+    width:4.6875vw;
+    height:4.6875vw;
+    vertical-align: middle;
+}
+.page01 .page01_pic{
+    display: block;
+    width: 66.40625vw;
+    margin: 0 auto;
+}
+.page02{
+    width: 100%;
+    height: 157.5vw;
+    background: url("../pics/xiaoben/page2/pic01.png");
+    background-size: 100% 100%;
+}
+.page02 .page02_word01{
+    padding-top: 16.5625vw;
+    color: #fff;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 600;
+}
+.page02 .page02_word02{
+    padding-top: 5vw;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: #fff;
+    text-align: center;
+    font-size: 3.59375vw;
+    line-height: 5.46875vw;
+    margin-bottom: 28vw;
+}
+.page02 .page02_boxs{
+    width: 50%;
+}
+.page02 .page02_boxs01{
+    width: 67.8125%;
+    margin: 0 auto;
+}
+.page02 .page02_box{
+    margin-top: 1.13378vw;
+    float: left;
+    width: 50%;
+}
+.page02 .page02_box .page02_box_img{
+    height: 5vw;
+    margin-bottom: 4.375vw;
+}
+.page02 .page02_box .page02_box_img img{
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 5vw;
+}
+.page02 .page02_box .page02_box_word{
+    text-align: center;
+    /*line-height: 3.527557vw;*/
+    color: #fff;
+    font-size: 2.8125vw;
+    margin-bottom: 5vw;
+}
+.page03{
+    width: 100%;
+    height: 157.5vw;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.page03 .page03_word01{
+    text-align: center;
+    color: #00a0e9;
+    font-size: 5vw;
+    font-weight: 600;
+    padding-top: 20.625vw;
+    padding-bottom: 4.6875vw;
+}
+.page03 .page03_word02{
+    text-align: center;
+    color: #8b8b8b;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 3.59375vw;
+    padding-bottom: 2.03125vw;
+}
+.page03 .page03_word03{
+    text-align: center;
+    color: #8b8b8b;
+    font-size: 3.59375vw;
+    padding-bottom: 8.75vw;
+}
+.page03 .page03_img{
+    display: block;
+    margin: 0 auto;
+    height: 64.53125vw;
+    width: 100%;
+    padding-bottom: 6.71875vw;
+}
+.page03 .page03_words{
+    width: 66.5625%;
+    margin: 0 auto;
+}
+.page03 .page03_wordBox{
+    width:33.3%;
+    float: left;
+    margin-bottom: 4.375vw;
+}
+.page03 .page03_word04{
+    color:#00a0e9;
+    font-size: 4.6875vw;
+    text-align: center;
+    margin-bottom: 1.875vw;
+    line-height: 4.6875vw;
+}
+.page03 .page03_word05{
+    color: #8b8b8b;
+    font-size: 3.125vw;
+    text-align: center;
+    line-height: 3.125vw;
+}
+.page04{
+    width: 100%;
+    height: 157.5vw;
+    background: url("../pics/xiaoben/page4/pic01.png");
+    background-size: 100% 100%;
+}
+.page04 .page04_word01{
+    color: #00a0e9;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 600;
+    padding-top: 13.4375vw;
+    line-height: 7.1875vw;
+    padding-bottom: 4.6875vw;
+}
+.page04 .page04_word02{
+    color: #666;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-size: 3.75vw;
+    padding-bottom: 5.3125vw;
+}
+.page04 .page04_iconBoxs{
+    width: 80%;
+    margin: 0 auto;
+}
+.page04 .page04_iconBox{
+    width: 33.333%;
+    float: left;
+}
+.page04 .page04_iconBox img{
+    display: block;
+    margin: 0 auto;
+    width: 12.96875vw;
+    height: 12.96875vw;
+    padding-bottom: 1.875vw;
+}
+.page04 .page04_word03{
+    text-align: center;
+    color: #00a0e9;
+    font-size: 2.96875vw;
+}
+.page05{
+    width: 100%;
+    height: 157.5vw;
+    background: url("../pics/xiaoben/page5/pic01.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.page05 .page05_words{
+    width: 89.375%;
+    margin: 0 auto;
+    padding-top: 13vw;
+    padding-bottom: 15vw;
+}
+.page05 .page05_word{
+    /*float: left;
+    width: 43.4vw;*/
+    border: 1px solid #0199df;
+    border-radius: 20px;
+    text-align: center;
+    background: rgba(6,48,75,.7);
+    color: white;
+    font-size: 2.2vw;
+    line-height: 6.71875vw;
+    margin-top: 2.5vw;
+}
+.page05 .page05_word01{
+    margin-right: 1.25vw;
+}
+.page05 .page05_pic{
+    display: block;
+    margin: 0 auto;
+    width: 46%;
+    height: 90.5vw;
+}
+.page06{
+    width:100%;
+    height: 157.5vw;
+    overflow: hidden;
+    background: #f3f3f3;
+    position: relative;
+}
+.page06 .page06_word01{
+    text-align: center;
+    color: #00a0e9;
+    font-weight: 600;
+    font-size: 5vw;
+    padding-top: 21.875vw;
+    line-height: 7.03125vw;
+    padding-bottom: 3.75vw;
+}
+.page06 .page06_word02{
+    text-align: center;
+    color: #666;
+    font-size: 3.59375vw;
+    line-height: 4.6875vw;
+    margin-bottom: 7.5vw;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.page06 .page06_iconBoxs{
+    width: 80%;
+    margin: 0 auto;
+}
+.page06 .page06_iconBox{
+    width: 33.333%;
+    float: left;
+}
+.page06 .page06_iconBox img{
+    display: block;
+    margin: 0 auto;
+    width: 12.96875vw;
+    height: 12.96875vw;
+    padding-bottom: 2.65625vw;
+}
+.page06 .page06_iconBox p{
+    color: #00a0e9;
+    text-align: center;
+    font-size: 2.96875vw;
+}
+.page06 .page06_img{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.page07{
+    width: 100%;
+    height: 157.5vw;
+    overflow: hidden;
+    background: url("../pics/xiaoben/page7/pic01.png");
+    background-size: 100% 100%;
+}
+.page07 .page06_word01{
+    text-align: center;
+    color: #00a0e9;
+    font-weight: 600;
+    font-size: 5vw;
+    padding-top: 8vw;
+    line-height: 7.03125vw;
+    padding-bottom: 1.5vw;
+}
+.page07 .page06_word02{
+    text-align: center;
+    color: #666;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 3.59375vw;
+    line-height: 5vw;
+    margin-bottom: 7.03125vw;
+}
+.page07 .page06_iconBoxs{
+    width: 63.28125%;
+    margin: 0 auto;
+}
+.page07 .page06_iconBox{
+    width: 33.333%;
+    float: left;
+}
+.page07 .page06_iconBox img{
+    display: block;
+    margin: 0 auto;
+    width: 12.96875vw;
+    height: 12.96875vw;
+    padding-bottom: 2.5vw;
+}
+.page07 .page06_iconBox p{
+    color: #00a0e9;
+    text-align: center;
+    font-size: 2.96875vw;
+}
+.page07 .page06_img{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.page08{
+    width: 100%;
+    height: 157.5vw;
+    overflow: hidden;
+    background: url("../pics/xiaoben/page8/pic04.png");
+    background-size: 100% 100%;
+}
+.page08 .page06_word01{
+    text-align: center;
+    color: #00a0e9;
+    font-weight: 600;
+    font-size: 5vw;
+    padding-top: 16.25vw;
+    line-height: 7.03125vw;
+    padding-bottom: 3.75vw;
+}
+.page08 .page06_word02{
+    text-align: center;
+    color: #666;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 3.59375vw;
+    line-height: 5.625vw;
+    margin-bottom: 4.6875vw;
+}
+.page08 .page06_iconBoxs{
+    width: 63.28125%;
+    margin: 0 auto;
+}
+.page08 .page06_iconBox{
+    width: 33.333%;
+    float: left;
+}
+.page08 .page06_iconBox img{
+    display: block;
+    margin: 0 auto;
+    width: 12.96875vw;
+    height: 12.96875vw;
+    padding-bottom: 1.875vw;
+}
+.page08 .page06_iconBox p{
+    color: #00a0e9;
+    text-align: center;
+    font-size: 2.96875vw;
+}
+.page08 .page06_img{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.page09{
+    width: 100%;
+    height: 157.5vw;
+    background: #e0e1e1;
+    overflow: hidden;
+    position: relative;
+}
+

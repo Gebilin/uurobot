@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>康力优蓝</title>
+	<link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+    <link rel="shortcut" href="/favicon.ico" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> 
+    <meta content="always" name="referrer">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="人工智能,机器人,小优机器人,康力优蓝,杰思谷科技,家用智能机器人,商用服务" />
+    <meta name="description" content="北京康力优蓝机器人科技有限公司是一家集科技研发、工业设计、生产制造、产品营销为一体的智  能服务机器人综合方案服务商。公司依托康力电梯、清华紫光两大上市企业平台，以“打造智能生活”为使命，致力于为个人和企业用户提  供最具创新价值的民用机器人产品及应用案，已成长为中国最著名的机器人企业。" />
+     <!-- 插件 -->
+    <link href="plugIn/video/video-js.css" rel="stylesheet" type="text/css"/>
+     <!-- 本地css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
+</head>
+    <div id="header">
+       <div class="nav clearfix">
+         <a href="index.html" class="logo"><img src="imgs/logo.png" alt="logo"></a>
+         <ul class="nav-list clearfix">
+           <li class="nav-item"><a href="xiaoyou.html">家伴</a></li>
+           <li class="nav-item"><a href="xiaoben.html">萌宠</a></li>
+           <li class="nav-item"><a href="youyou.html">商用</a></li>
+           <li class="nav-item"><a href="custom.html">定制</a></li>
+           <li class="nav-item"><a href="service.html">服务</a></li>
+           <li class="nav-item nav-item-right">
+            <form onsubmit="submitFn(this, event);">
+                <div class="search-wrapper">
+                  <div class="input-holder" id="form">
+                  <form action="#" class="filterform">
+                    <input type="text" class="search-input filterinput">
+                  </form>
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                  </div>
+                  <span class="close" onclick="searchToggle(this, event);"></span>
+                  <div class="result-container" style="z-index: 9999;">
+                    <ul id="list"> 
+                      <li><a href="xiaoyou.html">U03S</a></li> 
+                      <li><a href="xiaoben.html">MINI U</a></li> 
+                      <li><a href="youyou.html">U05</a></li> 
+                      <li><a href="custom.html">定制</a></li> 
+                      <li><a href="service.html">售后</a></li> 
+                      <li><a href="aboutus.html">更多</a></li>   
+                    </ul> 
+                  </div>
+                </div>
+              </form>
+             <div class="language">
+               <i class="earth-icon"></i>
+               <span><a href="http://www.uurobot.com/en" style="margin-right: 0">English</a></span>
+             </div>
+           </li>
+         </ul>
+       </div>
+        <div class="nav-two" id="scroll-nav">
+            <div class="nav-two-list">
+              <h4>小优&nbsp;&nbsp;U03S</h4>
+                <ul>
+                   <li><a href="javascript:void">十大优势</a></li>
+                   <li><a href="javascript:void">千里眼下载</a></li>
+                   <li><a href="xy-detail.html">技术规格</a></li>
+                   <li><a href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-16887934054.2.177cadf88rB90h&id=547471389435&skuId=3315651640672&scene=taobao_shop">购买</a></li>
+                </ul>
+           </div>
+       </div>
+    </div>
+    <div id="main">
+     <div class="movie">
+      <div class="closedBtn hodverItem"></div>
+      <video id="my-video" class="video-js" controls preload="auto" loop = "loop" data-setup="{}">
+        <source src="http://canbot.net.cn:10081/uurobot/xy-video.mp4" type="video/mp4">
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+          </div>
+             <div class="xu-main all-heigt">
+                 <div class="videoHide">
+                     <div class="main-content clearfix">
+                         <div class="brief">
+                             <h2 class="h2-wt fadeInUpLarge">小优 U03S</h2>
+                             <div class="brief-info  fadeInUp">伙伴型 家用智能机器人<br>小优相伴 智在生活</div>
+                             <div class="brief-more fadeIn video"><a href="javascript:;">观看产品视频<i class="action-icon"></i></a></div>
+                         </div>
+                          <img src="imgs/xy_img/xy.png" alt="xy.png" class="fadeInRightLarge">
+                     </div>
+                 </div>
+             </div>
+             <div class="item-mid item xu-section xu-section-one">
+               <div class="main-content">
+                  <div class="brief">
+                     <h2 class="h2-wt">超萌好伙伴&nbsp;&nbsp;陪伴超贴心</h2>
+                     <div class="brief-detail">24小时全天候陪伴，随叫随到的小管家；好孩子成长好榜样，个性化智能定制，孩子想象力的创意魔方。</div>
+                  </div>
+               </div>
+             </div>
+             <div class="item xu-section xu-section-two">
+                <div class="main-content">
+                    <div class="brief">
+                       <h2 class="h2-wt">超强大脑&nbsp;&nbsp;全脑智能</h2>
+                       <div class="brief-detail">强大的AI云智能知识库，海量信息无限传达。心智发育式智能定制组件，无限对话随意定制。全脑全能情景式引导系统，开启智能教育。</div>
+                       <ul class="brief-icons">
+                          <li><i class="img-1"></i>海量知识</li>
+                          <li><i class="img-2"></i>云端信息</li>
+                          <li style="margin-right: 0"><i class="img-3"></i>无限对话</li>
+                       </ul>
+                    </div>
+                 </div>
+             </div>
+             <div class="item-mid item xu-section xu-section-three">
+              <div class="main-content">
+                <div class="brief">
+                 <h2 class="h2-wt">倾听畅聊&nbsp;&nbsp;自然语言</h2>
+                 <div class="brief-detail">双麦克风阵列组合，五米远场识别模组，自身音源消除技术，自然语义分析及深度学习，虚拟人情感语音生成模型，本地及云智能语言识别双引擎。</div>
+                 <ul class="brief-icons">
+                  <li><i class="img-1"></i>远场识别</li>
+                  <li><i class="img-2"></i>情感语言</li>
+                  <li style="margin-right: 0"><i class="img-3"></i>语义分析</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+             <div class="item xu-section xu-section-four">
+               <div class="main-content clearfix">
+                  <div class="brief">
+                     <h2 class="h2-bk">千里眼界&nbsp;&nbsp;时刻相伴</h2>
+                     <div class="brief-text">通过手机操控，实现远程监控，开启双向自由视频通话，穿越空间关注孩子，全天24小时陪伴！</div>
+                     <ul class="brief-icons">
+                          <li><i class="img-1"></i>远程监控</li>
+                          <li><i class="img-2"></i>自由视频</li>
+                          <li style="margin-right: 0"><i class="img-3"></i>安全放心</li>
+                       </ul>
+                  </div>
+               </div>
+               <div class="float-content">
+               </div>
+             </div>
+             <div class="item-mid item xu-section xu-section-five">
+             <div class="blue-cover">
+              <div class="main-content">
+                <div class="brief">
+                 <h2 class="h2-wt">启蒙教育&nbsp;&nbsp;全能博士</h2>
+                 <div class="brief-detail">内容涵盖0-12岁脑力开发，感知训练、数学启蒙、科学探索、语言训练等启蒙教育，开启全脑全能教育新时代。</div>
+                 <ul class="brief-icons">
+                  <li><i class="img-1"></i>脑力开发</li>
+                  <li><i class="img-2"></i>启蒙教育</li>
+                  <li style="margin-right: 0"><i class="img-3"></i>全能成长</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+           <div class="item-mid item xu-section xu-section-six">
+              <div class="main-content">
+                <div class="brief">
+                 <h2 class="h2">习惯养成&nbsp;&nbsp;优良品质</h2>
+                 <div class="brief-detail">培养孩子的人格品质，从生活行为、品德修养，学习习惯等几大方面入手，在孩子身边发挥榜样作用，潜意识里灌输正确的行为观念。</div>
+              </div>
+              <ul class="brief-icons">
+                  <li><i class="img-1"></i><div class="gray-line">习惯养成</div></li>
+                  <li><i class="img-2"></i><div class="gray-line">品质塑造</div></li>
+                  <li><i class="img-3"></i><div class="gray-line">人格培养</div></li>
+                </ul>
+            </div>
+          </div>
+          <div class="item-mid item xu-section xu-section-seven">
+                <div class="main-content">
+                    <div class="brief">
+                       <h2 class="h2-wt">运动控制&nbsp;&nbsp;智能灵动</h2>
+                       <div class="brief-detail">会唱歌，会跳舞，会做运动。脚底的轮子和体内马达，能自由的行走和滑出优美的舞步。内置8个智能传感器、4个精密步进驱动马达，精准控制，动作灵活。</div>
+                       <ul class="brief-icons">
+                          <li><i class="img-1"></i>唱歌</li>
+                          <li><i class="img-2"></i>跳舞</li>
+                          <li style="margin-right: 0"><i class="img-3"></i>行走</li>
+                       </ul>
+                    </div>
+                 </div>
+             </div>
+              <div class="item xu-section xu-section-eight">
+               <div class="main-content clearfix">
+                  <div class="brief">
+                     <h2 class="h2-bk">智能家居&nbsp;&nbsp;智能物联</h2>
+                     <div class="brief-text">通过物联网，综合布线，网络通信，语音识别等技术集成，通过声控识别、无线遥控器、互联网控制家用设备，使多个设备形成联动，构建高效的住宅设施与家庭日成事物的管理系统。例如灯、电视、窗帘、空调控制等。</div>
+                  </div>
+               </div>
+                <div class="float-content">
+                       <div class="bling">
+                          <div class="bling-1"></div>
+                          <div class="bling-2"></div>
+                          <div class="bling-3"></div>
+                      </div>
+                      <div class="bling bl-2">
+                          <div class="bling-1"></div>
+                          <div class="bling-2"></div>
+                          <div class="bling-3"></div>
+                      </div>
+                      <div class="bling bl-3">
+                          <div class="bling-1"></div>
+                          <div class="bling-2"></div>
+                          <div class="bling-3"></div>
+                      </div>
+                      <div class="bling bl-4">
+                          <div class="bling-1"></div>
+                          <div class="bling-2"></div>
+                          <div class="bling-3"></div>
+                      </div>
+                      <div class="bling bl-5">
+                          <div class="bling-1"></div>
+                          <div class="bling-2"></div>
+                          <div class="bling-3"></div>
+                      </div>
+                </div>
+             </div>
+             <div class="item xu-section xu-section-nine" style='background: url(imgs/xy_img/9-bk.jpg) no-repeat center;'>
+               <div class="main-content clearfix">
+                  <div class="brief">
+                     <h2 class="h2-wt">健康医疗&nbsp;&nbsp;健康管理</h2>
+                     <div class="brief-text">作为优秀的家庭健康顾问，可连接BT4.0智能家用健康设备，可穿戴健康设备，实时监测家人血压、血糖、身高、体重，并记录分析所得数据，进行健康监测与慢病检测提醒，实时关注用户健康。关注家人身体健康，为家人健康保驾护航！</div>
+                     <ul class="brief-icons">
+                          <li><i class="img-1"></i>指标监测</li>
+                          <li><i class="img-2"></i>慢病管理</li>
+                          <li style="margin-right: 0"><i class="img-3"></i>守护健康</li>
+                       </ul>
+                  </div>
+               </div>
+             </div>
+              <!-- Swiper -->
+              <div id="swiper-container" class="clearfix xy-section show-swiper">
+              <div class="imgChange"><img src="imgs/xy_img/xy-front.png" /></div>
+              <div class="imgChange"><img src="imgs/xy_img/xy-right.png" /></div>
+              <div class="imgChange"><img src="imgs/xy_img/xy-behind.png" /></div>
+              <div class="imgChange"><img src="imgs/xy_img/xy-left.png" /></div>
+                <div class="device clearfix">
+                 <div class="swiper-btn">
+                  <div class="nextBtn imgBtn"></div>
+                  <div class="prevBtn imgBtn"></div>
+                </div>
+              </div>
+            </div>
+    <!-- swiper -->
+        <div class="xy-section section-twl">
+       <a href="javascript:;" name="wechat"></a>
+        <div class="main-content clearfix">
+            <div class="brief">
+                <h2 class="h2-wt">APP下载链接</h2>
+                <div class="brief-info" style="font-size: 14px;">下载“千里眼”app，随时掌握家中情况！人在千里之外，距家一步之遥！</div>
+            </div>
+                <div class="wechat-top">
+                </div>
+                <div class="wechat-bottom">
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+     <div id="footer">
+        <div class="footer-con clearfix">
+          <ul class="footer-con-left">
+            <li>
+               <a href="javascript:;" class="list-tit">了解产品</a>
+               <a href="xiaoyou.html"><span>家伴</span></a>
+               <a href="xiaoben.html"><span>萌宠</span></a>
+               <a href="youyou.html"><span>商用</span></a>
+               <a href="custom.html"><span>定制</span></a>
+            </li>
+            <li>
+               <a href="javascript:;" class="list-tit">服务支持</a>
+               <a href="service.html"><span>服务政策</span></a>
+               <a href="service.html#tel-number"><span>热线电话</span></a>
+               <a href="service.html#tel-number"><span>下载中心</span></a>
+            </li>
+            <li>
+               <a href="javascript:;" class="list-tit">关于我们</a>
+               <a href="aboutus.html"><span>品牌故事</span></a>
+               <a href="aboutus.html#location"><span>联系我们</span></a>
+               <a href="aboutus.html#join"><span>加入我们</span></a>
+               <a href="news.html"><span>企业新闻</span></a>
+               <a href="aboutus.html#cooperation"><span>合作伙伴</span></a>
+            </li>
+            <li class="li-last">
+               <a href="javascript:;" class="list-tit">商务合作</a>
+               <a href="agent.html"><span>我要代理</span></a>
+               <a href="agent.html"><span>我要定制</span></a>
+               <a href="agent.html"><span>我要租赁</span></a>
+               <a href="agent.html"><span>其他合作</span></a>
+            </li>
+          </ul>
+          <div class="footer-con-right">
+            <p style="font-size: 14px;"><i class="phone-icon"></i><span class="number">&nbsp;400-108-1028</span>
+           周一至周五&nbsp;&nbsp;中国&nbsp;9:00-18:00</p>
+            <div class="line"></div>
+              <a href="https://weibo.com/unisrobo?ssl_rnd=1509768966.4765&is_hot=1"><i class="sina-icon"></i></a>
+              <i class="wechat-icon"></i><i class="wechat-erweima-icon"></i>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2017 Shenzhen JustGood Technology Co., Ltd  深圳市紫光杰思谷科技有限公司&nbsp;&nbsp;&nbsp; 粤ICP备09177350号-1</div>
+     </div>   
+    <!-- footer -->
+            <!-- Back To Top -->
+        <a href="javascript:void(0);" class="back-to-top js__back-to-top"><i class="back-top-icon"></i></a>
+<!-- 插件 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/xy.js"></script>
+<script src="plugIn/video/video.min.js"></script>
+<script src="plugIn/video/videojs-ie8.min.js"></script>
+<!-- 本地 -->
+<script type="text/javascript">
+      window.onload = function(){
+      $('.video').click(function () {
+            $('.xu-main').hide();
+            $('.movie').show();
+            $('.movie video').get(0).play();
+            $('.movie').css({'display':'block'})
+           $('body').stop().animate({'scrollTop': ($('.movie')[0].offsetTop - 40 )}, 500)
+        })
+       $("video").css('object-fit','fill')
+        var myPlayer = videojs('my-video');
+        videojs("my-video").ready(function(){
+            var myPlayer = this;
+            myPlayer.pause();
+        });
+        
+        $('.closedBtn').click(function () {
+            $('.xu-main').show();
+            $('.movie').hide();
+            $('.movie video').get(0).pause();
+        })
+    }
+</script>
+</body>
+</html>

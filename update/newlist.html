@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>uurobot新闻列表</title>
+    <script type="text/javascript" src="edit/assets/jquery.min.js"></script>
+</head>
+<style>
+    #list tr{
+        margin-top: 100px;
+    }
+    #list tr td a {
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <div style="width: 80%;margin-left: 10%;margin-top: 20px;">
+        <table id="list" style="width: 100%">
+            <tr>
+                <td width="10%">id</td>
+                <td width="60%">新闻标题</td>
+                <td width="20%">发布时间</td>
+                <td width="10%">操作</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+<script>
+    $(function () {
+        $.ajax({
+            url: "../json/industry.json",//json文件位置
+            type: "GET",//请求方式为get
+            cache:false,
+            dataType: "json", //返回数据格式为json
+            success: function(data) {//请求成功完成后要执行的方法
+                var html_tmp = "";
+                for (var item in data) {
+                    var id,title, time, img_url, content, a_url;
+
+                    id = data[item].id;
+                    title = data[item].title;
+                    time = data[item].time;
+                    img_url = data[item].img;
+                    content = data[item].describe;
+                    a_url = data[item].url;
+                    html_tmp = html_tmp+
+                        "<tr>" +
+                        "<td>"+id+"</td>" +
+                        "<td>"+title+"</td>" +
+                        "<td>"+time+"</td>" +
+                        "<td><a href=del.php?id="+id+">删除</a><a href=update_news.html>添加</a></td>" +
+                        "</tr>";
+                }
+                $("#list").append(html_tmp)
+            }
+        })
+      /*  $.getJSON("../json/industry.json",function(data){
+            var html_tmp = "";
+            for (var item in data) {
+                var id,title, time, img_url, content, a_url;
+
+                id = data[item].id;
+                title = data[item].title;
+                time = data[item].time;
+                img_url = data[item].img;
+                content = data[item].describe;
+                a_url = data[item].url;
+                html_tmp = html_tmp+
+                    "<tr>" +
+                    "<td>"+id+"</td>" +
+                    "<td>"+title+"</td>" +
+                    "<td>"+time+"</td>" +
+                    "<td><a href=del.php?id="+id+">删除</a><a href=update_news.html>添加</a></td>" +
+                    "</tr>";
+            }
+            $("#list").append(html_tmp)
+        });*/
+    })
+</script>
+</html>

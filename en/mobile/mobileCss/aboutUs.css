@@ -1,0 +1,298 @@
+body{
+    background: #f5f3f3;
+}
+.page01{
+    width: 100%;
+    overflow: hidden;
+    height: 57.125vw;
+    background: url("../pics/aboutUs/page01/pic01.png");
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 6.875vw;
+    font-weight: 600;
+    margin-bottom: 1.5625vw;
+}
+.page01 p{
+    padding-top: 22.5vw;
+}
+.page02{
+    width: 100%;
+    margin-bottom: 1.5625vw;
+    background: #fff;
+    padding: 6.25vw 0 19.6875vw;
+    overflow: hidden;
+}
+.page02 .page02_title{
+    color: #333;
+    font-size: 5.46875vw;
+    line-height: 5.46875vw;
+    font-weight: 600;
+    margin-left: 3.125vw;
+    margin-bottom: 3.90625vw;
+    margin-right: 3.125vw;
+}
+.page02 .page02_word01{
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+    color: #00a0e9;
+    font-size: 3.90625vw;
+    line-height: 3.90625vw;
+    margin-bottom: 7.8125vw;
+}
+.page02 .page02_word02{
+    font-size: 2.65625vw;
+    line-height: 4.6875vw;
+    color: #555;
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+    text-align: justify;
+}
+.page03{
+    background: #fff;
+    padding-top: 5.46875vw;
+    padding-bottom: 10.9375vw;
+    margin-bottom: 1.5625vw;
+}
+.page03 .page03_title{
+    color: #333;
+    font-size: 5.46875vw;
+    line-height: 5.46875vw;
+    font-weight: 600;
+    margin-left: 3.125vw;
+    margin-bottom: 8.25125vw;
+    margin-right: 3.125vw;
+}
+.page03 .page03_words{
+    margin-left: 18.28125vw;
+    border-left: 1px solid #999;
+    padding-top: 2.8125vw;
+    padding-left: 5.9375vw;
+    margin-right: 5.3125vw;
+    color: #555;
+}
+.page03 .page03_word01{
+    margin-top: 2.2vw;
+}
+.page03 .page03_word01 div{
+    float: left;
+    border: 2px solid #00a0e9;
+    border-radius: 50%;
+    width: 2.1875vw;
+    height: 2.1875vw;
+    position: relative;
+    left: -7.6vw;
+    background: #fff;
+    top: 1vw;
+}
+.page03 .page03_word01 p{
+    float: left;
+    color: #00a0e9;
+    font-weight: 600;
+    font-size: 3.75vw;
+    margin-bottom: 1.40625vw;
+    position: relative;
+    left: -2.5vw;
+}
+.page03 .page03_word02{
+    font-size: 2.65625vw;
+    line-height: 3.8vw;
+}
+.page04{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1.5625vw;
+    padding: 5.15625vw 0 5.9375vw;
+}
+.page04 .page04_title{
+    margin-left: 5.46875vw;
+    color: #333;
+    font-size: 5.46875vw;
+    font-weight: 600;
+    margin-bottom: 7.5vw;
+}
+.page04 .page04_img{
+    display: block;
+    margin: 0 auto 5.46875%;
+    width: 57.34375%;
+}
+.page04 .page04_words{
+    width: 92.65625%;
+    margin: 0 auto;
+}
+.page04 .page04_word01{
+    color: #333;
+    font-size: 4.0625vw;
+    font-weight: 600;
+    margin-bottom: 1.5625vw;
+}
+.page04 .page04_word02{
+    color: #00a0e9;
+    font-size: 4.0625vw;
+    margin-bottom: 5vw;
+}
+.page04 .page04_word03{
+    color: #555;
+    font-size: 2.65625vw;
+    line-height: 4.6875vw;
+    text-align: justify;
+}
+.page05{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1.5625vw;
+    padding-top: 5.15625vw;
+    padding-bottom: 10.625vw;
+}
+.page05 .page05_title{
+    color: #333;
+    font-size: 5.46875vw;
+    line-height: 5.46875vw;
+    font-weight: 600;
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+    margin-bottom: 4.6875vw;
+}
+.page05 .page05_headers{
+    width: 100%;
+    color: #fff;
+    background: #00a0e9;
+    text-align: center;
+    font-size: 3.28125vw;
+    line-height: 8.59375vw;
+    height: 8.59375vw;
+    font-weight: 600;
+}
+.page05 .page05_header{
+    float: left;
+    width: 25%;
+}
+.page05 .page05_headers01{
+    color: #555;
+    background: #fff;
+    height: 7.8125vw;
+    line-height: 7.8125vw;
+    text-align: center;
+    font-size: 2.65625vw;
+    border-top:2px dashed #e5e5e5;
+}
+.page05 .page05_headers01:nth-child(3){
+    color: #fff;
+    background: #555;
+    height: 7.8125vw;
+    line-height: 7.8125vw;
+    text-align: center;
+    font-size: 2.65625vw;
+    border-top: none;
+}
+.page05 .page05_headers01:nth-child(7){
+    border-bottom:2px dashed #e5e5e5;
+}
+.page05 .page05_headers01 img{
+    width: 1.71875vw;
+    vertical-align: middle;
+}
+.page05Animate{
+    transform: rotate(90deg);
+}
+.page05 .page05_words{
+    padding-top: 5.46875vw;
+    padding-bottom: 5.625vw;
+    color: #555;
+    width: 92%;
+    margin: 0 auto;
+}
+.page05 .page05_word02{
+    font-size: 2.85125vw;
+    line-height: 3.9vw;
+    margin-bottom: 4.6875vw;
+    text-align: justify;
+}
+.page05 .page05_word01{
+    font-size: 3.59375vw;
+    font-weight: 600;
+    margin-bottom: 1.5626vw;
+}
+.page05 a{
+    text-decoration: none;
+    color: #fff;
+}
+.page05 .page05_button{
+    color: #fff;
+    width: 21.5625vw;
+    text-align: center;
+    background: #00a0e9;
+    font-size: 2.8125vw;
+    line-height: 6.5625vw;
+    height: 6.5625vw;
+    border-radius: 5px;
+}
+.page06{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1.5625vw;
+    padding-top: 5.15625vw;
+}
+.page06 .page06_title{
+    color: #333;
+    font-size: 5.46875vw;
+    line-height: 5.46875vw;
+    font-weight: 600;
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+    margin-bottom: 2.96875vw;
+}
+.page06 .nullMap{
+    width: 93.4375%;
+    height: 51.5625vw;
+    margin: 0 auto 4.84375vw;
+    position: relative;
+}
+.page06 .allmap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.anchorBL{display:none;}
+.page06 .allmap01 {
+    z-index: 5;
+}
+.page06 .allmap02 {
+    z-index: 4;
+}
+.page06 .page06_word{
+    padding-bottom: 5.15625vw;
+    margin-left: 5.78125vw;
+}
+.page06 .page06_word01{
+    font-size: 3.59375vw;
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 1.5625vw;
+    line-height: 5vw;
+}
+.page06 .page06_word02{
+    font-size: 2.8125vw;
+    line-height: 5vw;
+    color: #555;
+}
+.page07{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1.5625vw;
+    padding-top: 5.15625vw;
+}
+.page07 .page07_title{
+    margin-bottom: 1vw;
+    color: #333;
+    font-size: 5.46875vw;
+    line-height: 5.46875vw;
+    font-weight: 600;
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+}
+.page07 .page07_img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}

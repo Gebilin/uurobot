@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>康力优蓝</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+    <link rel="shortcut" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> 
+    <meta content="always" name="referrer">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="人工智能,机器人,小优机器人,康力优蓝,杰思谷科技,家用智能机器人,商用服务" />
+    <meta name="description" content="北京康力优蓝机器人科技有限公司是一家集科技研发、工业设计、生产制造、产品营销为一体的智  能服务机器人综合方案服务商。公司依托康力电梯、清华紫光两大上市企业平台，以“打造智能生活”为使命，致力于为个人和企业用户提  供最具创新价值的民用机器人产品及应用案，已成长为中国最著名的机器人企业。" />
+     <!--插件-->
+     <!--本地css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
+    <link href="plugIn/video/video-js.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="header">
+    <div class="nav clearfix">
+        <a href="index.html" class="logo"><img src="imgs/logo.png" alt="logo"></a>
+        <ul class="nav-list clearfix">
+            <li class="nav-item"><a href="xiaoyou.html">家伴</a></li>
+            <li class="nav-item"><a href="xiaoben.html">萌宠</a></li>
+            <li class="nav-item"><a href="youyou.html">商用</a></li>
+            <li class="nav-item"><a href="custom.html">定制</a></li>
+            <li class="nav-item"><a href="service.html">服务</a></li>
+            <li class="nav-item nav-item-right">
+               <form onsubmit="submitFn(this, event);">
+                <div class="search-wrapper">
+                    <div class="input-holder" id="form">
+                      <form action="#" class="filterform">
+                        <input type="text" class="search-input filterinput">
+                    </form>
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+                <div class="result-container">
+                    <ul id="list"> 
+                      <li><a href="xiaoyou.html">U03S</a></li> 
+                      <li><a href="xiaoben.html">MINI U</a></li> 
+                      <li><a href="youyou.html">U05</a></li> 
+                      <li><a href="custom.html">定制</a></li> 
+                      <li><a href="service.html">售后</a></li> 
+                      <li><a href="aboutus.html">更多</a></li>   
+                  </ul> 
+              </div>
+          </div>
+        </form>
+                <div class="language">
+                    <i class="earth-icon"></i>
+                    <span><a href="http://www.uurobot.com/en" style="margin-right: 0">English</a></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-two" id="scroll-nav">
+        <div class="nav-two-list">
+            <a href="javascript:window.scrollTo(0,0)"><h4>小笨</h4></a>
+            <ul>
+                <li><a href="javascript:void">行走</a></li>
+                <li><a href="javascript:void">知识</a></li>
+                <li><a href="javascript:void">畅聊</a></li>
+                <li><a href="javascript:void">编程</a></li>
+                <li><a href="javascript:void">大脑</a></li>
+                <li><a href="javascript:void">下载</a></li>
+                <li><a href="xb-detail.html">技术规范</a></li>
+                <li><a href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-16887782992.3.177cadf88rB90h&id=556132641454&scene=taobao_shop">购买</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div class="movie">
+        <div class="closedBtn hodverItem"></div>
+        <video id="my-video" class="video-js" controls preload="auto" loop = "loop" data-setup="{}">
+            <source src="http://canbot.net.cn:10081/uurobot/xb-video.mp4" type="video/mp4">
+             <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+    </div>
+    <!--page 01-->
+    <div class="xb-section-one item">
+        <!--视频关闭按钮-->
+        <div class="main-content">
+          <div class="brief">
+            <h2 class="h2-wt fadeInDownLarge" style="text-align: center;">小笨迷你 U<br>来自火星的桌面萌宠机器人</h2>
+            <div class="brief-more fadeIn video firstWord"><a href="javascript:;">观看产品视频<i class="action-icon"></i></a></div>
+          </div>
+            <img src="imgs/xb/1-icon.png" class="slideUpLarge" />
+        </div>
+    </div>
+    <!--page 01-->
+    <!--page 02-->
+     <div class="xb-section xb-section-two item">
+      <div class="cover">
+        <div class="main-content">
+           <div class="brief">
+               <h2 class="h2-wt">能走的才是“真”机器人</h2>
+               <div class="brief-detail"> 小笨智能机器人拥有双驱动轮,双智能传感器,单滚珠从动轮,可实现360°自由运动,让学习不再枯燥。</div>
+               <ul class="brief-icons">
+                  <li><i class="img-1"></i>向前走</li>
+                  <li><i class="img-2"></i>向后退</li>
+                  <li><i class="img-3"></i>向左走</li>
+                  <li><i class="img-4"></i>向右走</li>
+                  <li><i class="img-5"></i>右转圈</li>
+                  <li><i class="img-6"></i>左转圈</li>
+                  <li><i class="img-7"></i>跟我走</li>
+                  <li style="margin-right: 0"><i class="img-8"></i>跳个舞</li>
+               </ul>
+           </div>
+           <img src="imgs/xb/2-left.png" alt="product" class="img-left">
+           <img src="imgs/xb/2-right.png" alt="product" class="img-right">
+       </div>
+     </div>
+    </div>
+    <!--page 02-->
+    <!--page 03-->
+    <div class="xb-section xb-section-three item">
+      <div class="main-content">
+        <div class="brief">
+          <h2 class="h2-wt">云端海量 知识教学</h2>
+          <div class="brief-detail">儿歌故事  | 成语大全 | 生活百科 | 英文翻译 | 海量资源 | 应有尽有</div>
+           <ul class="brief-icons">
+                  <li><span>20000+</span><br>分龄点播</li>
+                  <li><span>30000+</span><br>儿童歌曲</li>
+                  <li style="margin-right: 0"><span>10000+</span><br>启蒙英语</li>
+                  <li><span>&nbsp;&nbsp;300000+</span><br>第三方音频</li>
+                  <li><span>12000+</span><br>国学经典</li>
+                  <li style="margin-right: 0"><span>100000+</span><br>童话故事</li>
+            </ul>
+        </div>
+        <img src="imgs/xb/3-icon.png" alt="pic">
+      </div>
+    </div>
+    <!--page 03-->
+    <!--page 04-->
+    <div class="xb-section xb-section-four item">
+     <div class="main-content">
+       <div class="brief">
+         <h2>语言交互 无限畅聊</h2>
+         <div class="brief-detail">开放式AI语言库，随时侃天说地，轻松畅聊，无话不谈。</div>
+         <ul class="brief-icons">
+          <li><i class="img-1"></i>语音识别</li>
+          <li><i class="img-2"></i>智能语库</li>
+          <li><i class="img-3"></i>无限对话</li>
+      </ul>
+       </div>
+     </div>
+    </div>
+    <!--page 04-->
+    <!--page 05-->
+    <div class="xb-section xb-section-five item">
+       <div class="main-content">
+         <img src="imgs/xb/5-icon-mid.png" alt="5-icon" class="scale-img">
+         <div class="words words-1"></div>
+         <div class="words words-2"></div>
+         <div class="words words-3"></div>
+         <div class="words words-4"></div>
+         <div class="words words-5"></div>
+         <div class="words words-6"></div>
+         <div class="words words-7"></div>
+         <div class="words words-8"></div>
+         <div class="words words-9"></div>
+         <div class="words words-10"></div>
+       </div>
+    </div>
+    <!--page 05-->
+    <!--page 06-->
+    <div class="xb-section xb-section-six item">
+      <div class="main-content">
+        <div class="brief">
+          <h2>舞蹈编程 趣味益智</h2>
+          <div class="brief-detail">手机端舞蹈编程,增强孩子的逻辑思维,锻炼孩子的感性创作。</div>
+          <ul class="brief-icons">
+          <li><i class="img-1"></i>逻辑思考</li>
+          <li><i class="img-2"></i>艺术启蒙</li>
+          <li style="margin-right: 0"><i class="img-3"></i>操作方便</li>
+         </ul>
+        </div>
+          <img src="imgs/xb/wudao.jpg" alt="wudao">
+      </div>
+    </div>
+    <!--page 06-->
+    <!--page 07-->
+    <div class="xb-section xb-section-seven item">
+      <div class="float-content">
+        <div class="brief">
+          <h2 class="h2-wt">一键记忆 最强大脑</h2>
+          <div class="brief-detail">开启录音，记录父母的爱心提醒。号码速记，让孩子
+随时想起老爸老妈的电话号码。</div>
+           <ul class="brief-icons">
+          <li><i class="img-1"></i>一键录音</li>
+          <li><i class="img-2"></i>爱心提醒</li>
+          <li style="margin-right: 0"><i class="img-3"></i>号码速记</li>
+      </ul>
+        </div>
+      </div>
+    </div>
+    <!--page 07-->
+    <!--page 08-->
+    <div class="xb-section xb-section-eight item">
+      <div class="float-content">
+        <div class="brief">
+          <h2 class="h2-wt">良师益友 多重角色</h2>
+          <div class="brief-detail">小诗人,歌唱家,故事大王,超级学霸,随时更换角色,您
+想要的都在这里。</div>
+           <ul class="brief-icons">
+          <li><i class="img-1"></i>小诗人</li>
+          <li><i class="img-2"></i>歌唱家</li>
+          <li style="margin-right: 0"><i class="img-3"></i>故事大王</li>
+      </ul>
+        </div>
+      </div>
+    </div>
+    <!--page 08-->
+     <!-- Swiper -->
+     <div id="swiper-container-xb">
+       <div class="swiper-pages">
+          <div class="swiper-or swiper-page">
+            <div class="imgChange"><img src="imgs/xb/o-1.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/o-2.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/o-3.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/o-4.png" /></div>
+          </div>
+          <div class="swiper-wt swiper-page show-swiper">
+            <div class="imgChange"><img src="imgs/xb/w-1.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/w-2.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/w-3.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/w-4.png" /></div>
+          </div>
+          <div class="swiper-yl swiper-page">
+            <div class="imgChange"><img src="imgs/xb/y-1.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/y-2.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/y-3.png" /></div>
+            <div class="imgChange"><img src="imgs/xb/y-4.png" /></div>
+          </div>
+      </div>
+      <div class="device clearfix">
+       <div class="swiper-btn">
+            <div class="nextBtn imgBtn" id="next"></div>
+            <div class="prevBtn imgBtn"></div>
+            </div>
+      </div>
+      <div class="swiper-change">
+          <ul>
+             <li class="orange"></li>
+             <li class="white"></li>
+             <li class="yellow" style="margin-right: 0"></li>
+          </ul>
+     </div>
+   </div>
+    <!-- swiper -->
+    <div class="xb-section section-twl">
+       <a href="javascript:;" name="wechat"></a>
+        <div class="main-content clearfix">
+            <div class="brief">
+                <h2 class="h2-wt">APP下载链接</h2>
+                <div class="brief-info" style="font-size: 18px;">下载APP，轻松操控小笨机器人！</div>
+            </div>
+                <div class="wechat-top">
+                </div>
+                <div class="wechat-bottom">
+                </div>
+        </div>
+    </div>
+</div>
+<!--page 09-->
+
+<!--page 09-->
+<!--page 10-->
+<!--page 10-->
+<!-- footer -->
+     <div id="footer">
+        <div class="footer-con clearfix">
+          <ul class="footer-con-left">
+            <li>
+               <a href="javascript:;" class="list-tit">了解产品</a>
+               <a href="xiaoyou.html"><span>家伴</span></a>
+               <a href="xiaoben.html"><span>萌宠</span></a>
+               <a href="youyou.html"><span>商用</span></a>
+               <a href="custom.html"><span>定制</span></a>
+            </li>
+            <li>
+               <a href="javascript:;" class="list-tit">服务支持</a>
+               <a href="service.html"><span>服务政策</span></a>
+               <a href="service.html#tel-number"><span>热线电话</span></a>
+               <a href="service.html#tel-number"><span>下载中心</span></a>
+            </li>
+            <li>
+               <a href="javascript:;" class="list-tit">关于我们</a>
+               <a href="aboutus.html"><span>品牌故事</span></a>
+               <a href="aboutus.html#location"><span>联系我们</span></a>
+               <a href="aboutus.html#join"><span>加入我们</span></a>
+               <a href="news.html"><span>企业新闻</span></a>
+               <a href="aboutus.html#cooperation"><span>合作伙伴</span></a>
+            </li>
+            <li class="li-last">
+               <a href="javascript:;" class="list-tit">商务合作</a>
+               <a href="agent.html"><span>我要代理</span></a>
+               <a href="agent.html"><span>我要定制</span></a>
+               <a href="agent.html"><span>我要租赁</span></a>
+               <a href="agent.html"><span>其他合作</span></a>
+            </li>
+          </ul>
+          <div class="footer-con-right">
+            <p style="font-size: 14px;"><i class="phone-icon"></i><span class="number">&nbsp;400-108-1028</span>
+           周一至周五 &nbsp;中国&nbsp;9:00-18:00</p>
+            <div class="line"></div>
+              <a href="https://weibo.com/unisrobo?ssl_rnd=1509768966.4765&is_hot=1"><i class="sina-icon"></i></a>
+              <i class="wechat-icon"></i><i class="wechat-erweima-icon"></i>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2017 Shenzhen JustGood Technology Co., Ltd  深圳市紫光杰思谷科技有限公司&nbsp;&nbsp;&nbsp; 粤ICP备09177350号-1</div>
+     </div>   
+    <!-- footer -->
+<!-- Back To Top -->
+<a href="javascript:void(0);" class="back-to-top js__back-to-top"><i class="back-top-icon"></i></a>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/xb.js"></script>
+<script src="plugIn/video/video.min.js"></script>
+<script src="plugIn/video/videojs-ie8.min.js"></script>
+<!-- Initialize Swiper -->
+<script type='text/javascript'>
+     $('.video').click(function () {
+            $('.xb-section-one').hide();
+            $('.movie').show();
+            $('.movie video').get(0).play();
+             $('.movie').css({'display':'block'});
+             $('body').stop().animate({'scrollTop': ($('.movie')[0].offsetTop - 40 )}, 500)
+        })
+       $("video").css('object-fit','fill')
+        var myPlayer = videojs('my-video');
+        videojs("my-video").ready(function(){
+            var myPlayer = this;
+            myPlayer.pause();
+        });
+        
+        $('.closedBtn').click(function () {
+            $('.xb-section-one').show();
+            $('.movie').hide();
+            $('.movie video').get(0).pause();
+        })
+</script>
+</body>
+</html>

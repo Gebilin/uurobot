@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息列表</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-width: 1220px;
+    }
+
+    #list {
+        width: 100%;
+    }
+
+    tbody tr:nth-of-type(odd) {
+        background: #fff;
+    }
+
+    tbody tr:nth-of-type(even) {
+        background: #eee;
+    }
+
+    h3 {
+        margin: 50px 20px;
+    }
+
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    table {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    thead {
+        background: #00a0e9;
+        color: #fff;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #aaa;
+    }
+
+    button {
+        padding: 5px;
+        background: #42b983;
+        color: #fff;
+        border: 1px solid #42b983;
+        border-radius: 5px;
+    }
+
+    .action {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background: url(../imgs/look.png) 0 0 no-repeat;
+    }
+
+    .close {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        background: url(../imgs/close-wt.png) 0 0 no-repeat;
+    }
+
+    .close:hover {
+        -moz-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    #mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        background: rgba(0, 0, 0, .5);
+        filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7f000000, endcolorstr=#7f000000);
+    }
+
+    #mask.show {
+        opacity: 1;
+        z-index: 33;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+
+    #mask .con-text {
+        width: 500px;
+        margin: 20px auto;
+        background: #fff;
+    }
+
+    #mask .form-head {
+        background: #aaa;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    #mask .form-item {
+        margin-left: 70px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    #mask .form-item span {
+        position: absolute;
+        top: 10px;
+        left: -40px;
+    }
+
+    #mask input, #mask textarea {
+        width: 400px;
+        padding-left: 5px;
+        font-size: 14px;
+        color: #000;
+        font-family: "微软雅黑", "Arial";
+    }
+
+    #mask textarea {
+        height: 200px;
+        padding: 5px;
+    }
+
+
+
+    #mask button {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    #mask .sure {
+        margin-left: 320px;
+        margin-right: 10px;
+    }
+
+    #mask .dele {
+        background: #f86264;
+        border: 1px solid #f86264;
+    }
+</style>
+<body>
+<div id="list">
+    <h3 style="text-align: center;">代理、租赁、定制消息列表</h3>
+    <table>
+        <thead>
+        <tr>
+            <th width="200">时间</th>
+            <th>类型</th>
+            <th>姓名</th>
+            <th>手机号</th>
+            <th>公司</th>
+            <th>状态</th>
+            <th style="text-align: center;">操作</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div id="mask">
+    <div class="mask-con">
+        <div class="con-text">
+            <div class="form-head">
+                <h3>详细信息</h3>
+                <i class="close"></i>
+            </div>
+            <div class="form-item">
+                <span>时间</span>
+                <input class="text" readonly="readonly" name="time">
+            </div>
+            <div class="form-item">
+                <span>类型</span>
+                <input class="text" readonly="readonly" name="type">
+            </div>
+            <div class="form-item">
+                <span>姓名</span>
+                <input class="text" readonly="readonly" name="name">
+            </div>
+            <div class="form-item">
+                <span>手机</span>
+                <input class="text" readonly="readonly" name="telephone">
+            </div>
+            <div class="form-item">
+                <span>公司</span>
+                <input class="text" readonly="readonly" name="company">
+            </div>
+            <div class="form-item">
+                <span>描述</span>
+                <textarea readonly="readonly" name="name"></textarea>
+            </div>
+            <button class="sure">确认处理</button>
+            <button class="dele">取消</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            'url': 'showlist.php',
+            'dataType': 'jsonp',
+            'jsonp': 'callback',
+            'success': function (data) {
+                for (var item in data) {
+                    var id = data[item]["id"];
+                    var time = data[item]["time"];
+                    var type = data[item]["type"];
+                    var name = data[item]["name"];
+                    var tel = data[item]["telephone"];
+                    var company = data[item]["company"];
+                    var mess = data[item]["message"];
+                    var status = data[item]["status"];
+                    var ty = "";
+                    var sta = "";
+                    if (type == 1) {
+                        ty = "代理"
+                    } else if (type == 2) {
+                        ty = "定制"
+                    } else {
+                        ty = "租赁"
+                    }
+
+                    if (status == -1) {
+                        sta = "已处理"
+                    } else {
+                        sta = "未处理"
+                    }
+
+                    var msg = ['<tr class="info">',
+                        '<td style="display: none">' + id + '</td>',
+                        '<td>' + time + '</td>',
+                        '<td>' + ty + '</td>',
+                        '<td>' + name + '</td>',
+                        '<td>' + tel + '</td>',
+                        '<td>' + company + '</td>',
+                        '<td class="status">' + sta + '</td>',
+                        '<td style="display: none">' + mess + '</td>',
+                        '<td style="text-align: center;">',
+                        '<a href="javascript:;" title="查看"><button class="show-det"><i class="action"></i></button></a>',
+                        '</td>',
+                        '</tr>'].join("");
+                    $("tbody").append(msg)
+                }
+                $('table .show-det').click(function () {
+                    $("#mask").addClass("show")
+                    for (var i = 0; i < 5; i++) {
+                        $(".con-text input:text").eq(i).val($(this).parent().parent().parent().children().eq(i+1).html())
+                    }
+
+                    $('textarea').html($(this).parent().parent().parent().children().eq(7).html())
+                    var sd = $(this).parent().parent().parent().index();
+                    $("#mask .sure").unbind().click(function () {
+                        var id = $(".info").eq(sd).children().eq(0).html()
+                         $.ajax({
+                         url: 'deal.php',
+                         data: {id: id},
+                         type: "POST",
+                         success: function (data) {
+                         $("#mask").removeClass("show");
+                         $("tbody .status").eq(sd).html("已处理")
+                         }
+                         })
+                    })
+                    $("#mask .dele").unbind().click(function () {
+                        $("#mask").removeClass("show");
+                    })
+                })
+
+            }
+        });
+
+        $("#mask .close").click(function () {
+            $("#mask").removeClass("show")
+        })
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<br />
+<b>Warning</b>:  fopen(resource/U03S.pdf): failed to open stream: No such file or directory in <b>D:\phpStudy\PHPTutorial\WWW\planb\download.php</b> on line <b>10</b><br />
+<br />
+<b>Warning</b>:  filesize(): stat failed for resource/U03S.pdf in <b>D:\phpStudy\PHPTutorial\WWW\planb\download.php</b> on line <b>13</b><br />
+<br />
+<b>Warning</b>:  filesize(): stat failed for resource/U03S.pdf in <b>D:\phpStudy\PHPTutorial\WWW\planb\download.php</b> on line <b>15</b><br />
+<br />
+<b>Warning</b>:  fread() expects parameter 1 to be resource, boolean given in <b>D:\phpStudy\PHPTutorial\WWW\planb\download.php</b> on line <b>15</b><br />
+<br />
+<b>Warning</b>:  fclose() expects parameter 1 to be resource, boolean given in <b>D:\phpStudy\PHPTutorial\WWW\planb\download.php</b> on line <b>16</b><br />
